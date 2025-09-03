@@ -1,4 +1,4 @@
-import { Controller, Get, Req } from '@nestjs/common';
+import { Controller, Get, Post, Req } from '@nestjs/common';
 import { AppService } from './app.service';
 import { oauth2Client } from './main';
 import { calendar_v3, google } from 'googleapis';
@@ -26,11 +26,20 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  @Post("/calendar-watch-webhook")
+  calendarWatchWebhook(@Req() param): any {
+    console.log("headers", param.headers);
+    console.log("body", param.body);
+    console.log("WEBHOOK WATCH CALENDAR EVENT");
+    return "ok";
+  }
+
   @Get("/callback")
   async oauth2GoogleCallback(@Req() param): Promise<any> {
 
     const { code } = param.query;
     const { tokens } = await oauth2Client.getToken(code);
+    console.log("tokens", tokens);
     oauth2Client.setCredentials(tokens);
     
     const calendar = google.calendar({ version: "v3", auth: oauth2Client });
@@ -45,7 +54,6 @@ export class AppController {
     });
     // console.log(res.data.items);
 
-    google.events.wat
 
     return(res.data);
   }
