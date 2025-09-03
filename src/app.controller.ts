@@ -8,7 +8,18 @@ import { GaxiosResponseWithHTTP2 } from 'googleapis-common';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  
+  // https://developers.google.com/workspace/calendar/api/v3/reference/events/watch
+
+  /*??????
+    const res = await calendar.events.watch({
+    calendarId: 'primary',
+    requestBody: {
+      id: crypto.randomUUID(),
+      type: 'web_hook',
+      address: 'https://yourdomain.com/calendar/webhook',
+    },
+  });
+  */
 
   @Get()
   getHello(): string {
@@ -33,6 +44,8 @@ export class AppController {
       orderBy: "startTime",
     });
     // console.log(res.data.items);
+
+    google.events.wat
 
     return(res.data);
   }
