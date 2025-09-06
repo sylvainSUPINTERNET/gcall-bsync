@@ -23,7 +23,17 @@ export class AppController {
 
   @Get()
   getHello(): string {
+
+    
     return this.appService.getHello();
+  }
+
+  @Post("/notion-webhook")
+  notionWebhook(@Req() param): any {
+    console.log("NOTION WEBHOOK");
+    console.log("body", JSON.stringify(param.body, null, 2));
+    // console.log("headers", param.headers);
+    return "ok"
   }
 
   @Post("/calendar-watch-webhook")
