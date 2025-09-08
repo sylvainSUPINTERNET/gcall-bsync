@@ -1,0 +1,126 @@
+NOTION WEBHOOK
+body {
+  "id": "240e9f4b-74ff-4232-8202-efacd77c4e6d",
+  "timestamp": "2025-09-08T20:32:34.598Z",
+  "workspace_id": "60bf2a21-a737-81b6-926c-00035ae2aaee",
+  "workspace_name": "sylvain joly’s",
+  "subscription_id": "268d872b-594c-81de-b3e7-00990278adcd",
+  "integration_id": "25dd872b-594c-8037-8921-0037e6d5f29b",
+  "authors": [
+    {
+      "id": "25dd872b-594c-810b-b37b-00022222c762",
+      "type": "person"
+    }
+  ],
+  "attempt_number": 1,
+  "api_version": "2025-09-03",
+  "entity": {
+    "id": "268f2a21-a737-8095-bba4-c0fec195ea66",
+    "type": "page"
+  },
+  "type": "page.created",
+  "data": {
+    "parent": {
+      "id": "268f2a21-a737-80d3-8823-c690b99bd6ac",
+      "type": "database",
+      "data_source_id": "268f2a21-a737-80db-8517-000bd5052d41"
+    }
+  }
+}
+
+
+
+NOTION WEBHOOK
+body {
+  "id": "2fb16b9e-ac9e-479f-8f3e-7cf2d1abc96c",
+  "timestamp": "2025-09-08T20:32:35.334Z",
+  "workspace_id": "60bf2a21-a737-81b6-926c-00035ae2aaee",
+  "workspace_name": "sylvain joly’s",
+  "subscription_id": "268d872b-594c-81de-b3e7-00990278adcd",
+  "integration_id": "25dd872b-594c-8037-8921-0037e6d5f29b",
+  "authors": [
+    {
+      "id": "25dd872b-594c-810b-b37b-00022222c762",
+      "type": "person"
+    }
+  ],
+  "attempt_number": 1,
+  "api_version": "2025-09-03",
+  "entity": {
+    "id": "268f2a21-a737-8095-bba4-c0fec195ea66",
+    "type": "page"
+  },
+  "type": "page.content_updated",
+  "data": {
+    "parent": {
+      "id": "268f2a21-a737-80d3-8823-c690b99bd6ac",
+      "type": "database",
+      "data_source_id": "268f2a21-a737-80db-8517-000bd5052d41"
+    },
+    "updated_blocks": [
+      {
+        "id": "268f2a21-a737-80c5-a60f-e9e0e9f9d883",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-80e1-8d5b-c550716989d1",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-8015-a694-f4ceffae0681",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-807d-981a-d747bcc4f062",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-8002-9d0b-f62396715b4b",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-801a-8f80-e65464d60049",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-80cc-ba85-e00b62d1a8f2",
+        "type": "block"
+      },
+      {
+        "id": "268f2a21-a737-80f3-a8bc-d9eec1bb18e7",
+        "type": "block"
+      }
+    ]
+  }
+}
+
+
+NOTION WEBHOOK
+body {
+  "id": "c8ca715b-f5bb-4dd4-91d5-e5e6dfd9e919",
+  "timestamp": "2025-09-08T20:38:41.221Z",
+  "workspace_id": "60bf2a21-a737-81b6-926c-00035ae2aaee",
+  "workspace_name": "sylvain joly’s",
+  "subscription_id": "268d872b-594c-81de-b3e7-00990278adcd",
+  "integration_id": "25dd872b-594c-8037-8921-0037e6d5f29b",
+  "authors": [
+    {
+      "id": "25dd872b-594c-810b-b37b-00022222c762",
+      "type": "person"
+    }
+  ],
+  "attempt_number": 1,
+  "api_version": "2025-09-03",
+  "entity": {
+    "id": "268f2a21-a737-806d-851d-c9f386a3db0e",
+    "type": "page"
+  },
+  "type": "page.deleted",
+  "data": {
+    "parent": {
+      "id": "268f2a21-a737-80d3-8823-c690b99bd6ac",
+      "type": "database",
+      "data_source_id": "268f2a21-a737-80db-8517-000bd5052d41"
+    }
+  }
+}

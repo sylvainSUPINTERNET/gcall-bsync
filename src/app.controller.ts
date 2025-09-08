@@ -33,6 +33,7 @@ export class AppController {
     console.log("NOTION WEBHOOK");
     console.log("body", JSON.stringify(param.body, null, 2));
     // console.log("headers", param.headers);
+
     return "ok"
   }
 
@@ -51,6 +52,7 @@ export class AppController {
     const { tokens } = await oauth2Client.getToken(code);
     console.log("tokens", tokens);
     oauth2Client.setCredentials(tokens);
+    
     
     const calendar = google.calendar({ version: "v3", auth: oauth2Client });
     const calendars:GaxiosResponseWithHTTP2<calendar_v3.Schema$CalendarList>= await calendar.calendarList.list();

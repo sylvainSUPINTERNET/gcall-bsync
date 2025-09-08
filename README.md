@@ -1,3 +1,12 @@
+
+
+```` bash
+ cloudflared tunnel --config .\config.yml run 94613cd9-9f1b-4254-8fe7-ecee75e83a7e
+````
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
