@@ -56,6 +56,7 @@ export class AppController {
     
     const calendar = google.calendar({ version: "v3", auth: oauth2Client });
     const calendars:GaxiosResponseWithHTTP2<calendar_v3.Schema$CalendarList>= await calendar.calendarList.list();
+
     
     const res = await calendar.events.list({
       calendarId: calendars.data.items?.filter( item => item.id === "lapotion.store@gmail.com")[0].id as string,
